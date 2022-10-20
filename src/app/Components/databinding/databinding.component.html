@@ -1,0 +1,34 @@
+<h2>String Interpolation : {{name}}</h2>
+<h2>Property Binding: &nbsp;<span [innerHTML]="name"></span></h2>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCrYLOt03K57HDhmVqYesGG3Fht4kLzHQUw&usqp=CAU" alt="" /> &nbsp;
+<img src="{{flow_image}}" alt="" />&nbsp;
+<img [src]="flow_image" alt="" /> &nbsp;
+<img bind-src="flow_image" alt="" /> &nbsp;
+<br>
+<input value="Murali Veerla" />
+<input value="{{name}}" />&nbsp;
+<input [value]="name" />&nbsp;
+<input bind-value="name" />&nbsp;
+++===================================++<br>
+<button type="button">ClickMe</button>&nbsp;
+<button disabled="{{flag}}" type="button">Click Me</button>&nbsp;
+<button type="button" [disabled]="flag">Click Me</button>&nbsp;
+<button type="button" bind-disabled="flag">Click Me</button>&nbsp; <br>
+<br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+<button class="btn btn-primary" (click)="f1()">Click Me</button>
+<button class="btn btn-primary" on-click="f1()">Click Me</button>
+<br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+<h2 [hidden]="flag">Hello this is toggle assignment workaround</h2>
+ <button class="btn btn-primary" (click)="toggle()">{{flag ? 'SHOW' : 'HIDE'}}</button>
+ <br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+<p><input type="number" [(ngModel)]="num1" /></p>
+<p><input type="number" [(ngModel)]="num2" /></p>
+<p>The addtion of 2 numbers is {{num1}} and {{num2}} is : {{num1 + num2}}</p>
+<p>The subtraction of 2 numbers is {{num1}} and {{num2}} is : {{num1 - num2}}</p>
+<p>The Multiplication of 2 numbers is {{num1}} and {{num2}} is : {{num1 * num2}}</p>
+<p>The Devison of 2 numbers is {{num1}} and {{num2}} is : {{num1 / num2}}</p>
+<p>the value of the counter is {{counter}}</p>
+<button class="btn-btn-primary" (click)="Increment()">Increment</button>
+
+<br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+
